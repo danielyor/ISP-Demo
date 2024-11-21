@@ -1,20 +1,15 @@
 ﻿namespace MusicInstruments;
 
-public class ElectricGuitar : IMusicInstrument
+public class ElectricGuitar : IElectricGuitar
 {
     public void Amplify()
     {
         Console.WriteLine("Plug the guitar in.");
     }
 
-    public void BlowAir()
-    {
-        throw new NotImplementedException();
-    }
-
     public void Play()
     {
-        Console.WriteLine("Start playing the guitar.");
+        Console.WriteLine("Start playing the guitar!");
     }
 
     public void PlaySickSolo()
@@ -30,11 +25,6 @@ public class ElectricGuitar : IMusicInstrument
     public void SetVolume(int volume)
     {
         Console.WriteLine("Set the volume at: " + volume);
-    }
-
-    public void Strike()
-    {
-        throw new NotImplementedException();
     }
 
     public void Tune()
